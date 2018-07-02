@@ -1,0 +1,452 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>我要推广</title>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <link href="/assets/mui/css/mui.min.css" rel="stylesheet"/>
+    <link href="/assets/layer/need/layer.css" rel="stylesheet" type="text/css"/>
+    <style>
+        body {
+            background-image: url(/images/wydlbj.png);
+            background-position: center top;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            width: 100%;
+            background-size: cover;
+            -moz-background-size: cover;
+            -webkit-background-size: cover;
+            text-align: center;
+        }
+
+        .mui-content-padded {
+            background: #fff;
+            border-radius: 4px;
+            margin-top: 60%;
+            width: 90%;
+            margin-left: 5%;
+            padding: 10px;
+        }
+
+        .mui-input-row {
+            border-bottom: 0.8px solid rgb(229, 229, 229);
+            padding: 5px 0;
+        }
+
+        .mui-input-row label {
+            text-align: left;
+            width: 28%;
+            color: rgb(27, 27, 27);
+            font-size: 15px;
+            line-height: 22px;
+            padding: 11px 15px;
+        }
+
+        .mui-input-row label ~ input, .mui-input-row label ~ select, .mui-input-row label ~ textarea {
+            width: 72%;
+            padding: 11px 0;
+        }
+
+        input::-webkit-input-placeholder {
+            color: rgb(153, 153, 153);
+            font-size: 15px;
+        }
+
+        .mui-checkbox input[type=checkbox]:checked:before, .mui-radio input[type=radio]:checked:before {
+            color: rgb(192, 22, 32);
+        }
+
+        .mui-checkbox.mui-left input[type=checkbox], .mui-radio.mui-left input[type=radio] {
+            left: 13px;
+        }
+
+        .btn-hyx {
+            width: 60%;
+            margin-left: 20%;
+            padding: 13px;
+            border-radius: 30px;
+            background: rgb(192, 22, 32);
+            border-color: rgb(192, 22, 32) !important;
+            margin-top: 10%;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+<section class="mui-content-padded">
+    <div class="mui-input-row">
+        <label>姓&nbsp;&nbsp;&nbsp;名</label>
+        <input id="splitName" type="text" name="username" class="mui-input-clear username" placeholder="填写身份证姓名">
+    </div>
+    <div class="mui-input-row">
+        <label>手机号</label>
+        <input id="splitPhone" type="tel" name="username" class="mui-input-clear username" placeholder="填写手机号">
+    </div>
+    <div class="mui-input-row">
+        <label>邀请码</label>
+        <input id="splitCode" type="tel" name="username" class="mui-input-clear username" placeholder="填写推广员的邀请码">
+    </div>
+    <div class="mui-input-row mui-checkbox mui-left" style="border-bottom:0">
+        <label style="width:62px;padding-top:15px;padding-right:0;padding-left:32px">同意 </label>
+        <a style="color:rgb(192,22,32);font-size:14px;" href="AddMyGeneration.html#agreement">《信用卡推广人员合作协议》</a>
+        <input name="checkbox" value="Item 2" type="checkbox" id="agree">
+    </div>
+</section>
+<button class="mui-btn mui-btn-block btn-hyx" id="submit">立即提交</button>
+<a href="AddMyGeneration.html#explain"
+   style="color:rgb(192,22,32);text-decoration:underline;text-align:center;padding:10px 0;">推广说明</a>
+<div id="explain" class="mui-popover mui-popover-action mui-popover-bottom ">
+    <ul class="mui-table-view">
+        <li class="mui-table-view-cell">
+            <h4>推广说明</h4>
+        </li>
+        <li class="mui-table-view-cell" style="height:180px">
+            <div class="mui-scroll-wrapper">
+                <div class="mui-scroll">
+                    <ol>
+                        <li>1.请填写正确信息后,点击提交即可成为推广人员。</li>
+                        <li>2.推广人员可发展多位办卡客户。客户首刷成功后推广人员不仅可获51元的直接奖励，还可分别计提一级和二级推广人员10%及5%的业绩提成。</li>
+                        <li>3.推广人数越多，奖励越丰厚，赶紧开始您的发财之路吧！</li>
+                    </ol>
+                </div>
+            </div>
+        </li>
+        <li class="mui-table-view-cell">
+            <a href="AddMyGeneration.html#explain"><b>返回</b></a>
+        </li>
+    </ul>
+</div>
+
+
+<div id="agreement" class="mui-popover mui-popover-action mui-popover-bottom ">
+    <ul class="mui-table-view">
+        <li class="mui-table-view-cell">
+            <h4>信用卡推广人员合作协议</h4>
+        </li>
+        <li class="mui-table-view-cell" style="height:360px">
+            <div class="mui-scroll-wrapper">
+                <div class="mui-scroll">
+                    <ol>
+                        <li>本平台主要面向需要申请成为信用卡推广人员，填写完整信息后即可成为信用卡推广人员。</li>
+                        <li>推广人员可让新客户通过该网络申请地址办理信用卡。办卡人越多，推广人员获得奖励越丰厚！</li>
+                        <li>直接推广奖励方式：每提交一个客户数据并由甲方合作银行审核通过，用户首刷成功的奖励51元。</li>
+                        <li>间接推广奖励方式：推广人员除可获上述两项奖励外，还可另行计提其下属一级分销推广收入的10%和二级分销推广收入的5%。首刷卡参照平台方合作银行信用卡中心系统数据为准。</li>
+                        <li>匹配方式按照用户手机号匹配，一个手机号只能申请一张卡，请勿重复申请。若用户在申请办卡界面使用一个手机号办理多张卡，则本平台只计算一次，且匹配状态随机。</li>
+                        <li>合作期间内，根据信用卡办理情况，就推广费用的调整，平台方拥有解释权。</li>
+                        <li>推广人员不能使用不符合国家法律法规规定和涉及虚假承诺或过度承诺的宣传广告内容进行推广。并且保证不会授意任何用户（包含但不仅限于网站与不良中介等）伪冒申请信用卡。</li>
+                    </ol>
+                </div>
+            </div>
+        </li>
+        <li class="mui-table-view-cell">
+            <a href="AddMyGeneration.html#agreement"><b>返回</b></a>
+        </li>
+    </ul>
+</div>
+<script src="/assets/jquery/jquery-3.3.1.min.js" type="text/javascript"></script>
+<script src="/assets/mui/js/mui.min.js" type="text/javascript"></script>
+<script src="/assets/layer/layer.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+    mui.init();
+    mui('.mui-scroll-wrapper').scroll();
+    var u = navigator.userAgent;
+    var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+    var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+    if (isiOS) {
+        $("#agree").css("margin-right", "-15px");
+    }
+    //获取openid
+    var openid = getCookie("openid1"); //////定义变量 "oYWkjwlRhpIZZDcT3yuxIXJkzkp4"; //
+    var splitCode = getQueryString("splitcode");
+    var headtype = getQueryString("headtype");
+    if (headtype == 'd') {
+        $(".tgsm").css("display", "none");
+    }
+    if (splitCode != "" && splitCode != undefined && splitCode != null) {
+        $("#splitCode").val(splitCode);
+        $("#splitCode").attr("disabled", true);
+    }
+
+    var userid = "";
+    var upperSplitId = "******************************";
+    var city = "";
+    //定义一个全局变量控制点击事件
+    var ajaxFlag = true;
+
+    //初始化相关数据
+    $(function () {
+        /*initJSAPI();
+        if (openid == undefined || openid == "") {
+            var code = getQueryString("code");
+            if (code == null) {
+                JumpToOauth();
+            } else {
+                //初始化jsapi参数
+                initOpenid(code);
+            }
+        } else {
+            //判断是否完善信息
+            getCreditInfo(openid);
+        }*/
+    });
+
+    //授权获取用户openid
+    function initOpenid(code) {
+        $.ajax({
+            type: "POST",
+            timeout: 80000,
+            url: "../webutil/initHandler.ashx",
+            dataType: "json",
+            data: {"code": code, "action": "init"},
+            beforeSend: function (XMLHttpRequest) {
+
+            },
+            success: function (msg) {
+                //获取相应的值，并存放到cookie中去
+                if (msg[0].openid == undefined || msg[0].openid.length == 0) {
+                } else {
+                    openid = msg[0].openid;
+                    //存入cookie
+                    setCookie("openid1", openid, 1);
+                    getCreditInfo(openid);
+                }
+            },
+            complete: function (XMLHttpRequest, textStatus) {
+                if (textStatus == 'timeout') {
+                    //超时,status还有success,error等值的情况
+                    alert("请求超时,请返回重试");
+                }
+            },
+            error: function (err) {
+                console.log("数据加载失败");
+            }
+        });
+    }
+
+    //获取用户userid
+    function initUserID(openid) {
+        $.ajax({
+            type: "POST",
+            timeout: 80000,
+            url: "../WebUtil/CouponListHandler.ashx",
+            dataType: "json",
+            data: {"openid": openid, "action": "initUserID"},
+            beforeSend: function (XMLHttpRequest) {
+            },
+            success: function (msg) {
+                userid = msg[0].userID;
+                //如果没有关注微信号，提示用户关注
+                if (userid == "" || userid == undefined || userid == null || userid == "NO") {
+
+                    ajaxFlag = false;
+                    layer.open({
+                        type: 1
+                        ,
+                        content: '<div style="text-align: center;">你尚未关注微信公众号,长按识别二维码关注</div><div style="text-align: center;"><img style="height: 100%;width: 85%;" src="../../Resource/img/CQXQBQR.png"></div>'
+                        ,
+                        anim: 'up'
+                        ,
+                        shadeClose: false
+                        ,
+                        style: 'position:fixed; bottom:0; left:0; width: 100%; height: 60%; padding:10px 0; border:none;'
+                    });
+                } else {
+                    initSubmit();
+                }
+            },
+            complete: function (XMLHttpRequest, textStatus) {
+                if (textStatus == 'timeout') {
+                    alert("请求超时,请返回重试");
+                }
+            },
+            error: function (err) {
+                // alert(err.responseText);
+            }
+        });
+    }
+
+    //提交信息
+    function addCreditInfo(splitCode, upperSplitId) {
+        if (ajaxFlag) {
+            //alert(upperSplitId);
+            var splitName = $("#splitName").val();
+            var splitPhone = $("#splitPhone").val();
+            if (splitName == "" || !checkMobilePhone(splitPhone)) {
+                swal({
+                    confirmButtonColor: "rgb(192,22,32)",
+                    text: "请正确填写姓名和手机号码!",
+                    title: "温馨提示",
+                    closeOnConfirm: false,
+                    confirmButtonText: "确定"
+                });
+            }
+            else if (!$("#agree").prop("checked")) {
+                swal({
+                    confirmButtonColor: "rgb(192,22,32)",
+                    text: "请确认已阅读并同意信用卡推广人员合作协议!",
+                    title: "温馨提示",
+                    closeOnConfirm: false,
+                    confirmButtonText: "确定"
+                });
+            } else {
+                layer.open({
+                    type: 2,
+                    shadeClose: false,
+                    content: '正在提交，请稍侯...'
+                });
+                $.ajax({
+                    type: "POST",
+                    timeout: 80000,
+                    url: "../webutil/credit_ashx/CreditHandler.ashx",
+                    dataType: "json",
+                    data: {
+                        "splitName": splitName,
+                        "splitPhone": splitPhone,
+                        "userId": userid,
+                        "splitCode": splitCode,
+                        "upperSplitId": upperSplitId,
+                        "city": city,
+                        "action": "addcreditinfo"
+                    },
+                    beforeSend: function (XMLHttpRequest) {
+                        ajaxFlag = false;
+                    },
+                    success: function (msg) {
+                        layer.closeAll();
+                        //获取相应的值，并存放到cookie中去
+                        if (msg[0].res == "true") {
+
+                            swal({
+                                confirmButtonColor: "rgb(192,22,32)",
+                                text: "恭喜您成为推广人员，快去开始你的发财之路吧！",
+                                title: "温馨提示",
+                                imageUrl: "../../Resource/Image/logo1.png",
+                                closeOnConfirm: false,
+                                confirmButtonText: "确定"
+                            }, function () {
+                                window.location.href = "myinfo.html";
+                            });
+                        } else if (msg[0].res == "had") {
+                            swal({
+                                confirmButtonColor: "rgb(192,22,32)",
+                                text: "您已经是我们的推广人员,请勿重复提交!",
+                                title: "温馨提示",
+                                confirmButtonText: "确定"
+                            }, function () {
+                                window.location.href = "myinfo.html";
+                            })
+                        } else if (msg[0].res == "close") {
+                            closeWindow();
+                        } else {
+                            swal({
+                                confirmButtonColor: "rgb(192,22,32)",
+                                text: "信息提交有误!",
+                                title: "温馨提示",
+                                closeOnConfirm: false,
+                                confirmButtonText: "确定"
+                            });
+                        }
+                    },
+                    complete: function (XMLHttpRequest, textStatus) {
+                        ajaxFlag = true;
+                        if (textStatus == 'timeout') {
+                            layer.closeAll();
+                            //超时,status还有success,error等值的情况
+                            alert("请求超时,请返回重试");
+                        }
+                    },
+                    error: function (err) {
+                        layer.closeAll();
+                        console.log("数据加载失败");
+                    }
+                });
+            }
+        }
+    }
+
+    //获取上级推广人员ID
+    function getCreditIdByCode() {
+        splitCode = $("#splitCode").val();
+        $.ajax({
+            type: "POST",
+            timeout: 80000,
+            url: "../webutil/credit_ashx/CreditHandler.ashx",
+            dataType: "json",
+            data: {"splitCode": splitCode, "action": "getcreditinfobysplitcode"},
+            beforeSend: function (XMLHttpRequest) {
+            },
+            success: function (msg) {
+                //获取相应的值，并存放到cookie中去
+                upperSplitId = msg[0].ROW_ID;
+                city = msg[0].CITY;
+                if (upperSplitId == "" || upperSplitId == undefined || upperSplitId == null) {
+                    swal({
+                        confirmButtonColor: "rgb(192,22,32)",
+                        text: "请输入正确的邀请码!",
+                        title: "温馨提示",
+                        closeOnConfirm: false,
+                        confirmButtonText: "确定"
+                    });
+                } else {
+                    addCreditInfo(splitCode, upperSplitId);
+                }
+            },
+            complete: function (XMLHttpRequest, textStatus) {
+                if (textStatus == 'timeout') {
+                    //超时,status还有success,error等值的情况
+                    alert("请求超时,请返回重试");
+                }
+            },
+            error: function (err) {
+                console.log("数据加载失败");
+            }
+        });
+    }
+
+    //获取推广人员信息
+    function getCreditInfo(openid) {
+        $.ajax({
+            type: "POST",
+            timeout: 80000,
+            url: "../webutil/credit_ashx/CreditHandler.ashx",
+            dataType: "json",
+            data: {"openid": openid, "action": "getcreditinfo"},
+            beforeSend: function (XMLHttpRequest) {
+            },
+            success: function (msg) {
+                //获取相应的值，并存放到cookie中去
+                if (msg[0].ROW_ID == undefined || msg[0].ROW_ID.length == 0) {
+                    initUserID(openid);
+                } else {
+                    swal({
+                        confirmButtonColor: "rgb(192,22,32)",
+                        text: "您已是我们的推广人员，点击确定进入个人中心界面！",
+                        title: "温馨提示",
+                        confirmButtonText: "确定"
+                    }, function () {
+                        window.location.href = "myinfo.html";
+                    })
+                }
+            },
+            complete: function (XMLHttpRequest, textStatus) {
+                if (textStatus == 'timeout') {
+                    //超时,status还有success,error等值的情况
+                    alert("请求超时,请返回重试");
+                }
+            },
+            error: function (err) {
+                console.log("数据加载失败");
+            }
+        });
+    }
+
+    function initSubmit() {
+        $("#submit").on("click", function () {
+            getCreditIdByCode();
+        });
+    }
+</script>
+</body>
+</html>
