@@ -1,18 +1,12 @@
-﻿<!doctype html>
-<html>
+﻿<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>我要推广</title>
-    <meta name="viewport"
-          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
-    <link href="/assets/mui/css/mui.min.css" rel="stylesheet"/>
-    <link href="/assets/layer/need/layer.css" rel="stylesheet" type="text/css"/>
+    <div th:include="fragments/header :: header" th:remove="tag"></div>
     <style>
         body {
-            background-image: url(/images/wydlbj.png);
-            background-position: center top;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
+            background: url(/images/wydlbj.png) no-repeat fixed center top;
             width: 100%;
             background-size: cover;
             -moz-background-size: cover;
@@ -89,12 +83,12 @@
     </div>
     <div class="mui-input-row mui-checkbox mui-left" style="border-bottom:0">
         <label style="width:62px;padding-top:15px;padding-right:0;padding-left:32px">同意 </label>
-        <a style="color:rgb(192,22,32);font-size:14px;" href="AddMyGeneration.html#agreement">《信用卡推广人员合作协议》</a>
+        <a style="color:rgb(192,22,32);font-size:14px;" href="#agreement">《信用卡推广人员合作协议》</a>
         <input name="checkbox" value="Item 2" type="checkbox" id="agree">
     </div>
 </section>
 <button class="mui-btn mui-btn-block btn-hyx" id="submit">立即提交</button>
-<a href="AddMyGeneration.html#explain"
+<a href="#explain"
    style="color:rgb(192,22,32);text-decoration:underline;text-align:center;padding:10px 0;">推广说明</a>
 <div id="explain" class="mui-popover mui-popover-action mui-popover-bottom ">
     <ul class="mui-table-view">
@@ -105,9 +99,9 @@
             <div class="mui-scroll-wrapper">
                 <div class="mui-scroll">
                     <ol>
-                        <li>1.请填写正确信息后,点击提交即可成为推广人员。</li>
-                        <li>2.推广人员可发展多位办卡客户。客户首刷成功后推广人员不仅可获51元的直接奖励，还可分别计提一级和二级推广人员10%及5%的业绩提成。</li>
-                        <li>3.推广人数越多，奖励越丰厚，赶紧开始您的发财之路吧！</li>
+                        <li>请填写正确信息后,点击提交即可成为推广人员。</li>
+                        <li>推广人员可发展多位办卡客户。客户首刷成功后推广人员不仅可获51元的直接奖励，还可分别计提一级和二级推广人员10%及5%的业绩提成。</li>
+                        <li>推广人数越多，奖励越丰厚，赶紧开始您的发财之路吧！</li>
                     </ol>
                 </div>
             </div>
@@ -144,10 +138,8 @@
         </li>
     </ul>
 </div>
-<script src="/assets/jquery/jquery-3.3.1.min.js" type="text/javascript"></script>
-<script src="/assets/mui/js/mui.min.js" type="text/javascript"></script>
-<script src="/assets/layer/layer.js" type="text/javascript"></script>
 
+<div th:include="fragments/footer :: footer" th:remove="tag"></div>
 <script type="text/javascript">
     mui.init();
     mui('.mui-scroll-wrapper').scroll();
