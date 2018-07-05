@@ -12,6 +12,8 @@ import javax.servlet.http.HttpServletResponse;
  */
 public class WechatHandlerInterceptor extends HandlerInterceptorAdapter {
 
+
+
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
         return true;

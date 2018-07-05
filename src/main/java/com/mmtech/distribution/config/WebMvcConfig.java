@@ -17,7 +17,7 @@ public class WebMvcConfig extends WebMvcConfigurerAdapter {
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(new WechatHandlerInterceptor());
-        registry.addInterceptor(new LogHandlerInterceptor());
+        // registry.addInterceptor(new LogHandlerInterceptor());
     }
 
 }

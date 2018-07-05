@@ -1,5 +1,7 @@
 package com.mmtech.distribution.handler;
 
+import com.alibaba.fastjson.JSON;
+import com.mmtech.distribution.builder.NewsBuilder;
 import com.mmtech.distribution.builder.TextBuilder;
 import me.chanjar.weixin.common.error.WxErrorException;
 import me.chanjar.weixin.common.session.WxSessionManager;
@@ -55,9 +57,9 @@ public class SubscribeHandler extends AbstractHandler {
     /**
      * 处理特殊请求，比如如果是扫码进来的，可以做相应处理
      */
-    private WxMpXmlOutMessage handleSpecial(WxMpXmlMessage wxMessage)
-            throws Exception {
-        //TODO
+    private WxMpXmlOutMessage handleSpecial(WxMpXmlMessage wxMessage) throws Exception {
+        logger.info("[wx message] : {}", JSON.toJSONString(wxMessage));
+        // return new NewsBuilder().build(wxMessage);
         return null;
     }
 
