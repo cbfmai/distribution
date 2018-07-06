@@ -32,6 +32,7 @@ public class SubscribeHandler extends AbstractHandler {
 
         if (userWxInfo != null) {
             // TODO 可以添加关注用户到本地
+            logger.info("[Wechat User Info] {}", JSON.toJSONString(userWxInfo));
         }
 
         WxMpXmlOutMessage responseResult = null;
